@@ -63,6 +63,7 @@ db_populate includes three rake tasks:
 rake db:populate loads all of the data for the current environment
 rake db:migrate_and_populate is the same as calling rake db:migrate followed by rake db:populate
 rake db:reset_and_populate is the same as calling rake db:reset followed by rake db:populate
+rake db:populate_schemas runs the same db:populate but it does so on all available postgres schemas
 
 gem usage
 =========
