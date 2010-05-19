@@ -16,7 +16,7 @@ namespace :db do
 	end
 
 	desc "Populates all Postgres schemas"
-	task :populate_schemas do
+	task :populate_schemas => :environment do
 		# get all schemas
 		env = "#{RAILS_ENV}"
 		config = YAML::load(File.open('config/database.yml'))
